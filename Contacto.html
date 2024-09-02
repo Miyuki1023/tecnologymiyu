@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html  lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Proyecto Web 1</title>
+    <link rel="icon" href="img/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="edgrid.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <header class="ed-container container-fluid">
+        <div class="ed-item web-20">
+            <a href="/"><img src="logo.png"></a>
+        </div>
+        <div class="ed-item web-80">
+            <nav>
+                <ul class="ed-menu web-horizontal web-main-end">
+                    <li><a class="ih" href="Index.html">Inicio</a></li>
+                    <li><a class="ih" href="Nosotros.html">Nosotros</a></li>
+                    <li><a class="ih" href="Artículos.html">Artículos</a>
+                        <ul class="ah">
+                            <li><a class="ih" href="#web">Web</a></li>
+                            <li><a class="ih" href="#moviles">Moviles</a></li>
+                            <li><a class="ih" href="#software">Software</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a class="ih" href="Tutoriales.html">Tutoriales</a></li>
+                    <li><a class="ih"  href="Contacto.html">Contacto </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="banner" class="ed-container">
+        <div class="ed-item">
+            <img src="banner1.jpg" alt="Inicio">
+        </div>
+    </div>
+
+    <div class="ed-container">
+        <main class="ed-item web-75">
+            <h1>Contacto</h1>
+            <p>Para cualquier consulta o sugerencia, por favor completa el siguiente formulario y nos pondremos en contacto contigo a la brevedad. Tu opinión es muy importante para nosotros.</p>
+
+            <div class="contact-form">
+                <h2>Formulario de Contacto</h2>
+                <form action="procesar_contacto.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+                    <br><br>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Información de Contacto</h2>
+                <h3>Dirección:</h3>
+                <p>Calle Ficticia 123, Ciudad Imaginaria, País Inventado</p>
+                
+                <h3>Teléfono:</h3>
+                <p>(123) 456-7890</p>
+                
+                <h3>Correo Electrónico:</h3>
+                <p>info@proyectoweb.com</p>
+
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.567830138267!2d-122.40750568468173!3d37.78373157975885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807b84c2e39f%3A0x5105b92c6f93e6a4!2sCalle%20Ficticia%20123%2C%20Ciudad%20Imaginaria%2C%20Pa%C3%ADs%20Inventado!5e0!3m2!1ses!2ses!4v1605288978178!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </main>
+
+        <aside class="ed-item web-25">
+            <div>
+                <h2>Conéctate con Nosotros</h2>
+                <p>Sigue nuestras últimas actualizaciones y descubre cómo la tecnología puede mejorar tu vida.</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Síguenos en Facebook</a></li>
+                    <li><a href="https://twitter.com/">Síguenos en Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/">Conéctate en LinkedIn</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="ed-container">
+            <div class="ed-item">
+                <p>Proyecto Web</p>
+                <p>Diseñado por la única y original MIYUKI!</p>
+            </div>
+        </div>
+    </footer>
+</body>  
+</html>
