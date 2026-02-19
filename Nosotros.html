@@ -8,49 +8,79 @@
     <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
-    <header class="ed-container container-fluid">
-        <div class="ed-item web-20">
-            <a href="/"><img src="logo.png"></a>
+    <header class="ed-container">
+        <div class="ed-item movil-50 web-20 logo-container">
+            <a href="Index.html"><img src="logo.png" alt="Logo de la empresa"></a>
         </div>
-        <div class="ed-item web-80">
-            <nav>
+        <div class="ed-item movil-50 web-80 nav-container">
+            <button class="hamburger-button" id="hamburger-button" aria-label="Abrir Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="main-nav" class="ed-menu-container">
                 <ul class="ed-menu web-horizontal web-main-end">
-                    <li><a class="ih" href="Index.html">Inicio</a></li>
-                    <li><a class="ih" href="Nosotros.html">Nosotros</a></li>
-                    <li><a class="ih" href="Artículos.html">Artículos</a>
-                        <ul class="ah">
-                            <li><a class="ih" href="#web">Web</a></li>
-                            <li><a class="ih" href="#moviles">Moviles</a></li>
-                            <li><a class="ih" href="#software">Software</a></li>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Artículos.html">Artículos</a>
+                        <ul>
+                            <li><a href="Artículos.html#web">Web</a></li>
+                            <li><a href="Artículos.html#moviles">Moviles</a></li>
+                            <li><a href="Artículos.html#software">Software</a></li>
                         </ul>
                     </li>
-                    
-                    <li><a class="ih" href="Tutoriales.html">Tutoriales</a></li>
-                    <li><a  href="Contacto.html">contacto     </a></li>
+                    <li><a href="Tutoriales.html">Tutoriales</a></li>
+                    <li><a href="Contacto.html">Contacto </a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div id="banner" class="ed-container">
-        <div class="ed-item">
-            <img class="w-25 py-4 "src="nosotros.jpg" alt="Conectividad 5G">
+    <section id="nosotros-banner" class="page-banner ed-container full">
+        <div class="page-banner-content ed-item">
+            <h1>Sobre Nosotros</h1>
         </div>
-        <h2>Conéctate al Futuro con Tecnología Avanzada</h2>
-
-    </div>
+    </section>
 
     <div class="ed-container">
         <main class="ed-item web-75">
-            <h1>Nosotros</h1>
-            <p>Somos una empresa de tecnología dedicada a proporcionar la información más reciente y relevante en el mundo de la tecnología. Nuestra misión es mantener a nuestros usuarios conectados con las últimas innovaciones y tendencias que están moldeando el futuro.</p>
-            <p>Desde avances en conectividad 5G hasta inteligencia artificial y ciberseguridad, brindamos análisis detallados, noticias de vanguardia y recursos educativos para que tanto empresas como usuarios individuales puedan estar al día en un entorno tecnológico en constante evolución.</p>
-            <p>Con un equipo de expertos en tecnología y una pasión por la innovación, nos comprometemos a ser tu fuente confiable de conocimiento tecnológico. Creemos en el poder transformador de la tecnología y en su capacidad para mejorar la vida cotidiana, por lo que nos esforzamos por proporcionar contenido que no solo informe, sino que también inspire.</p>
-            <p>Además, ofrecemos consultorías y soluciones personalizadas para empresas que buscan adoptar nuevas tecnologías, optimizar sus procesos y mantenerse competitivas en un mercado cada vez más digitalizado. Estamos aquí para guiarte en tu viaje hacia el futuro, proporcionando las herramientas y la información que necesitas para tener éxito en la era digital.</p>
-            <p>Nuestro compromiso con la excelencia se refleja en nuestros servicios de capacitación y formación, diseñados para empoderar tanto a profesionales como a entusiastas de la tecnología. A través de talleres, seminarios web, y programas de certificación, ayudamos a nuestros clientes a desarrollar las habilidades necesarias para navegar con éxito en un mundo cada vez más impulsado por la tecnología.</p>
-            <p>Además, estamos a la vanguardia de la sostenibilidad tecnológica, promoviendo el uso de soluciones ecológicas y sostenibles en todos nuestros proyectos. Creemos que la innovación tecnológica debe ir de la mano con la responsabilidad ambiental, y nos esforzamos por reducir la huella de carbono de nuestros servicios y productos.</p>
-            <p>Como parte de nuestra visión global, también estamos comprometidos con la inclusión digital, trabajando para cerrar la brecha tecnológica y asegurarnos de que todos, independientemente de su ubicación geográfica o nivel socioeconómico, tengan acceso a la tecnología y al conocimiento necesario para prosperar en la era digital.</p>
-            <p>En resumen, somos más que una empresa de tecnología; somos un socio en tu camino hacia la transformación digital, ofreciendo soluciones integrales y conocimientos expertos para ayudarte a enfrentar los desafíos del mañana con confianza.</p>
+            <section class="ed-container cross-center">
+                <div class="ed-item movil-100 web-60">
+                    <h2>Nuestra Misión y Visión</h2>
+                    <p>Somos una empresa de tecnología dedicada a proporcionar la información más reciente y relevante. Nuestra misión es mantener a nuestros usuarios conectados con las últimas innovaciones y tendencias que están moldeando el futuro.</p>
+                    <p>Desde avances en conectividad 5G hasta inteligencia artificial y ciberseguridad, brindamos análisis detallados y recursos educativos para que todos puedan estar al día en un entorno tecnológico en constante evolución.</p>
+                </div>
+                <div class="ed-item movil-100 web-40 feature-image">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Equipo trabajando con tecnología futurista">
+                </div>
+            </section>
+
+            <section class="ed-container cross-center">
+                <div class="ed-item movil-100 web-40 web-order-1 feature-image">
+                     <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Equipo de expertos colaborando en un proyecto">
+                </div>
+                <div class="ed-item movil-100 web-60 web-order-2">
+                    <h2>Compromiso y Expertise</h2>
+                    <p>Con un equipo de expertos en tecnología y una pasión por la innovación, nos comprometemos a ser tu fuente confiable de conocimiento. Creemos en el poder transformador de la tecnología para mejorar la vida cotidiana.</p>
+                    <p>Ofrecemos consultorías y soluciones personalizadas para empresas que buscan adoptar nuevas tecnologías, optimizar sus procesos y mantenerse competitivas en un mercado cada vez más digitalizado.</p>
+                </div>
+            </section>
+
+            <section class="ed-container cross-center">
+                <div class="ed-item movil-100 web-60">
+                    <h2>Un Futuro Sostenible e Inclusivo</h2>
+                    <p>Estamos a la vanguardia de la sostenibilidad tecnológica, promoviendo el uso de soluciones ecológicas. Creemos que la innovación debe ir de la mano con la responsabilidad ambiental.</p>
+                    <p>Como parte de nuestra visión global, estamos comprometidos con la inclusión digital, trabajando para cerrar la brecha tecnológica y asegurarnos de que todos tengan acceso al conocimiento para prosperar.</p>
+                </div>
+                <div class="ed-item movil-100 web-40 feature-image">
+                    <img src="https://images.pexels.com/photos/7988086/pexels-photo-7988086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Concepto de tecnología sostenible y ecología">
+                </div>
+            </section>
+            
+            <section>
+                 <h2>Tu Socio en la Transformación Digital</h2>
+                 <p>En resumen, somos más que una empresa de tecnología; somos un socio en tu camino hacia la transformación digital, ofreciendo soluciones integrales y conocimientos expertos para ayudarte a enfrentar los desafíos del mañana con confianza.</p>
+            </section>
         </main>
         <aside class="ed-item web-25">
             <div>
@@ -66,13 +96,55 @@
       </div>
 
 
-    <footer>
-        <div class="ed-container">
-            <div class="ed-item">
-                <p>Proyecto Web</p>
-                <p>Diseñado por la única y original MIYUKI! </p>
+<footer>
+    <div class="ed-container">
+        <div class="footer-container center">
+            <!-- Column 1: Logo and About -->
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <a href="Index.html"><img src="logo.png" alt="Logo de la empresa"></a>
+                </div>
+                <p>Impulsando el futuro a través de innovaciones tecnológicas. Conectamos personas, ideas y soluciones para un mañana más brillante.</p>
             </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-column">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="Nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="Artículos.html">Artículos</a></li>
+                    <li><a href="Tutoriales.html">Tutoriales</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Legal -->
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>
+
+        
         </div>
-    </footer>
+
+        <div class="footer-bottom center">
+            <p>&copy; 2024 Tecnología Avanzada. Diseñado por MIYUKI. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const mainNav = document.getElementById('main-nav');
+    
+        hamburgerButton.addEventListener('click', () => {
+            mainNav.classList.toggle('is-active');
+            hamburgerButton.classList.toggle('is-active');
+        });
+    </script>
 </body>  
 </html>

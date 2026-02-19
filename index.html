@@ -9,35 +9,41 @@
 
 </head>
 <body>
-    <header class="ed-container container-fluid">
-        <div class="ed-item web-20">
-            <a href="/"><img src="logo.png"></a>
+    <header class="ed-container">
+        <div class="ed-item movil-50 web-20 logo-container">
+            <a href="Index.html"><img src="logo.png" alt="Logo de la empresa"></a>
         </div>
-        <div class="ed-item web-80">
-            <nav>
+        <div class="ed-item movil-50 web-80 nav-container">
+            <button class="hamburger-button" id="hamburger-button" aria-label="Abrir Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="main-nav" class="ed-menu-container">
                 <ul class="ed-menu web-horizontal web-main-end">
-                    <li><a class="ih" href="Index.html">Inicio</a></li>
-                    <li><a class="ih" href="Nosotros.html">Nosotros</a></li>
-                    <li><a class="ih" href="Artículos.html">Artículos</a>
-                        <ul class="ah">
-                            <li><a class="ih" href="#web">Web</a></li>
-                            <li><a class="ih" href="#moviles">Moviles</a></li>
-                            <li><a class="ih" href="#software">Software</a></li>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Artículos.html">Artículos</a>
+                        <ul>
+                            <li><a href="Artículos.html#web">Web</a></li>
+                            <li><a href="Artículos.html#moviles">Moviles</a></li>
+                            <li><a href="Artículos.html#software">Software</a></li>
                         </ul>
                     </li>
-                    
-                    <li><a class="ih" href="Tutoriales.html">Tutoriales</a></li>
-                    <li><a class="ih"  href="Contacto.html">Contacto </a></li>
+                    <li><a href="Tutoriales.html">Tutoriales</a></li>
+                    <li><a href="Contacto.html">Contacto </a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div id="banner" class="ed-container">
-        <div class="ed-item">
-            <img src="index.jpg" alt="inicio">
+    <section id="hero-section" class="ed-container full">
+        <div class="hero-content ed-item web-100">
+            <h1>El Futuro es Ahora: Innovación Tecnológica a tu Alcance</h1>
+            <p>Descubre las tendencias que están redefiniendo el mañana. Conéctate con la vanguardia.</p>
+            <a href="Nosotros.html" class="boton">Explora Nuestras Soluciones</a>
         </div>
-    </div>
+    </section>
 
     <div class="ed-container">
         <main class="ed-item web-75">
@@ -45,44 +51,46 @@
             <p>En Tecnología Avanzada, nos dedicamos a impulsar el futuro a través de innovaciones tecnológicas. Creemos en un mundo donde la tecnología no solo facilita nuestras tareas diarias, sino que también transforma la manera en que vivimos y trabajamos.</p>
             <p>Nuestro equipo de expertos está comprometido con el desarrollo de soluciones que mejoren la eficiencia, aumenten la productividad y promuevan la sostenibilidad. Desde la inteligencia artificial hasta el Internet de las cosas (IoT), trabajamos para integrar la tecnología en todos los aspectos de la vida moderna.</p>
             <p>Únete a nosotros en este viaje hacia el futuro, donde las posibilidades son infinitas y la tecnología es el catalizador del cambio. Exploramos las últimas tendencias, compartimos conocimientos y desarrollamos innovaciones que definen el mañana.</p>
+
+            <section>
+                <h2>Nuestras Áreas de Enfoque</h2>
+                <ul>
+                    <li><strong>Inteligencia Artificial (IA):</strong> Creamos algoritmos y sistemas de IA que permiten a las empresas automatizar procesos, mejorar la toma de decisiones y proporcionar experiencias personalizadas a sus clientes.</li>
+                    <li><strong>Internet de las Cosas (IoT):</strong> Conectamos dispositivos para optimizar la eficiencia operativa, mejorar la seguridad y crear hogares inteligentes que facilitan la vida diaria.</li>
+                    <li><strong>Computación en la Nube:</strong> Ofrecemos soluciones en la nube que garantizan la escalabilidad, seguridad y accesibilidad de los datos, permitiendo a las empresas operar de manera flexible y segura.</li>
+                    <li><strong>Ciberseguridad:</strong> Implementamos estrategias avanzadas de ciberseguridad para proteger los activos digitales y la información confidencial de nuestros clientes contra amenazas cibernéticas.</li>
+                    <li><strong>Blockchain:</strong> Desarrollamos soluciones basadas en blockchain para mejorar la transparencia y la seguridad en transacciones financieras, gestión de cadenas de suministro, y más.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>¿Por Qué Elegirnos?</h2>
+                <p>Nos enorgullece ofrecer soluciones tecnológicas personalizadas que abordan las necesidades específicas de cada cliente. Nuestro enfoque integral asegura que cada proyecto esté alineado con los objetivos estratégicos de nuestros clientes, proporcionando resultados tangibles y medibles. Colaboramos con empresas de todos los tamaños, desde startups hasta corporaciones multinacionales, para ofrecer:</p>
+                <ul>
+                    <li>Consultoría tecnológica y asesoría estratégica.</li>
+                    <li>Desarrollo de software a medida y aplicaciones móviles.</li>
+                    <li>Implementación de infraestructura tecnológica.</li>
+                    <li>Formación y capacitación en nuevas tecnologías.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <blockquote>
+                    <p>"Tecnología Avanzada nos ha permitido transformar completamente nuestra infraestructura de TI, mejorando nuestra eficiencia operativa en un 40%. Su equipo es profesional, conocedor y siempre dispuesto a ayudar." - <strong>María González, Directora de Tecnología, Empresa Innovadora S.A.</strong></p>
+                </blockquote>
+                <blockquote>
+                    <p>"Gracias a su experiencia en inteligencia artificial, hemos podido ofrecer experiencias más personalizadas a nuestros clientes, aumentando la satisfacción y fidelización. No podríamos estar más contentos con los resultados." - <strong>Carlos Pérez, Gerente de Producto, TechSolutions Inc.</strong></p>
+                </blockquote>
+            </section>
+
+            <section>
+                <h2>Únete a Nuestra Comunidad</h2>
+                <p>Estamos en constante evolución y buscamos siempre las últimas innovaciones en tecnología. Únete a nuestra comunidad de entusiastas de la tecnología para recibir las últimas noticias, participar en eventos exclusivos y ser parte del futuro tecnológico.</p>
+                <button>Suscríbete a Nuestro Boletín</button>
+            </section>
         </main>
-         <div class="ed-item web-75">
-        <h2>Nuestras Áreas de Enfoque</h2>
-        <ul>
-            <li><strong>Inteligencia Artificial (IA):</strong> Creamos algoritmos y sistemas de IA que permiten a las empresas automatizar procesos, mejorar la toma de decisiones y proporcionar experiencias personalizadas a sus clientes.</li>
-            <li><strong>Internet de las Cosas (IoT):</strong> Conectamos dispositivos para optimizar la eficiencia operativa, mejorar la seguridad y crear hogares inteligentes que facilitan la vida diaria.</li>
-            <li><strong>Computación en la Nube:</strong> Ofrecemos soluciones en la nube que garantizan la escalabilidad, seguridad y accesibilidad de los datos, permitiendo a las empresas operar de manera flexible y segura.</li>
-            <li><strong>Ciberseguridad:</strong> Implementamos estrategias avanzadas de ciberseguridad para proteger los activos digitales y la información confidencial de nuestros clientes contra amenazas cibernéticas.</li>
-            <li><strong>Blockchain:</strong> Desarrollamos soluciones basadas en blockchain para mejorar la transparencia y la seguridad en transacciones financieras, gestión de cadenas de suministro, y más.</li>
-        </ul>
-    </div>
-        <div class="ed-item web-75">
 
-        <h2>¿Por Qué Elegirnos?</h2>
-        <p>Nos enorgullece ofrecer soluciones tecnológicas personalizadas que abordan las necesidades específicas de cada cliente. Nuestro enfoque integral asegura que cada proyecto esté alineado con los objetivos estratégicos de nuestros clientes, proporcionando resultados tangibles y medibles. Colaboramos con empresas de todos los tamaños, desde startups hasta corporaciones multinacionales, para ofrecer:</p>
-        <ul>
-            <li>Consultoría tecnológica y asesoría estratégica.</li>
-            <li>Desarrollo de software a medida y aplicaciones móviles.</li>
-            <li>Implementación de infraestructura tecnológica.</li>
-            <li>Formación y capacitación en nuevas tecnologías.</li>
-        </ul>
-        </div>
-        <div class="ed-item web-75">
-
-        <h2>Lo Que Dicen Nuestros Clientes</h2>
-        <blockquote>
-            <p>"Tecnología Avanzada nos ha permitido transformar completamente nuestra infraestructura de TI, mejorando nuestra eficiencia operativa en un 40%. Su equipo es profesional, conocedor y siempre dispuesto a ayudar." - <strong>María González, Directora de Tecnología, Empresa Innovadora S.A.</strong></p>
-        </blockquote>
-        <blockquote>
-            <p>"Gracias a su experiencia en inteligencia artificial, hemos podido ofrecer experiencias más personalizadas a nuestros clientes, aumentando la satisfacción y fidelización. No podríamos estar más contentos con los resultados." - <strong>Carlos Pérez, Gerente de Producto, TechSolutions Inc.</strong></p>
-        </blockquote>
-
-    </div>
-    <main class="ed-item web-75">
-        <h2>Únete a Nuestra Comunidad</h2>
-        <p>Estamos en constante evolución y buscamos siempre las últimas innovaciones en tecnología. Únete a nuestra comunidad de entusiastas de la tecnología para recibir las últimas noticias, participar en eventos exclusivos y ser parte del futuro tecnológico.</p>
-        <button>Suscríbete a Nuestro Boletín</button>
-    </main>
         <aside class="ed-item web-25">
             <div>
                 <h2>Conéctate con Nosotros</h2>
@@ -96,13 +104,46 @@
         </aside>
     </div>
 
-    <footer>
-        <div class="ed-container">
-            <div class="ed-item">
-                <p>Proyecto Web</p>
-                <p>Diseñado por la única y original Miyuki Kahori! </p>
+<footer>
+    <div class="ed-container">
+        <div class="footer-container center">
+            <!-- Column 1: Logo and About -->
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <a href="Index.html"><img src="logo.png" alt="Logo de la empresa"></a>
+                </div>
+                <p>Impulsando el futuro a través de innovaciones tecnológicas. Conectamos personas, ideas y soluciones para un mañana más brillante.</p>
             </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-column">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="Nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="Artículos.html">Artículos</a></li>
+                    <li><a href="Tutoriales.html">Tutoriales</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Legal -->
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>
+
+          
         </div>
-    </footer>
+
+        <div class="footer-bottom center">
+            <p>&copy; 2024 Tecnología Avanzada. Diseñado por MIYUKI. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
 </body>  
 </html>

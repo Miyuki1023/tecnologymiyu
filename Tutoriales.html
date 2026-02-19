@@ -8,158 +8,226 @@
     <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
-    <header class="ed-container container-fluid">
-        <div class="ed-item web-20">
-            <a href="/"><img src="logo.png"></a>
+    <header class="ed-container">
+        <div class="ed-item movil-50 web-20 logo-container">
+            <a href="Index.html"><img src="logo.png" alt="Logo de la empresa"></a>
         </div>
-        <div class="ed-item web-80">
-            <nav>
+        <div class="ed-item movil-50 web-80 nav-container">
+            <button class="hamburger-button" id="hamburger-button" aria-label="Abrir Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="main-nav" class="ed-menu-container">
                 <ul class="ed-menu web-horizontal web-main-end">
-                    <li><a class="ih" href="Index.html">Inicio</a></li>
-                    <li><a class="ih" href="Nosotros.html">Nosotros</a></li>
-                    <li><a class="ih" href="Artículos.html">Artículos</a>
-                        <ul class="ah">
-                            <li><a class="ih" href="#web">Web</a></li>
-                            <li><a class="ih" href="#moviles">Moviles</a></li>
-                            <li><a class="ih" href="#software">Software</a></li>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Artículos.html">Artículos</a>
+                        <ul>
+                            <li><a href="Artículos.html#web">Web</a></li>
+                            <li><a href="Artículos.html#moviles">Moviles</a></li>
+                            <li><a href="Artículos.html#software">Software</a></li>
                         </ul>
                     </li>
-                    
-                    <li><a class="ih" href="Tutoriales.html">Tutoriales</a></li>
-                    <li><a class="ih"  href="Contacto.html">Contacto </a></li>
+                    <li><a href="Tutoriales.html">Tutoriales</a></li>
+                    <li><a href="Contacto.html">Contacto </a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div id="banner" class="ed-container">
-        <div class="ed-item">
-            <img src="tutoriales.jpg" alt="tutoriales">
+    <section id="tutoriales-banner" class="page-banner ed-container full">
+        <div class="page-banner-content ed-item">
+            <h1>Tutoriales</h1>
         </div>
-    </div>
+    </section>
     <div class="ed-container">
         <main class="ed-item web-75">
-            <h1>Tutoriales</h1>
-
             <section id="web">
-                <h2>Desarrollo Web</h2>
-                <p>En esta sección, ofrecemos tutoriales que abarcan desde los fundamentos básicos del desarrollo web hasta temas intermedios y avanzados.</p>
-
-                <h3>Fundamentos Básicos</h3>
-                <ul>
-                    <li><strong>HTML:</strong> Aprende las etiquetas esenciales y cómo estructurar una página web.</li>
-                    <li><strong>CSS:</strong> Estilos básicos para formatear y diseñar páginas web.</li>
-                    <li><strong>JavaScript:</strong> Introducción a la programación en JavaScript y manipulación del DOM.</li>
-                </ul>
-
-                <h3>Tutoriales Intermedios</h3>
-                <ul>
-                    <li><strong>Responsive Design:</strong> Técnicas para diseñar sitios web que se adaptan a diferentes dispositivos y tamaños de pantalla.</li>
-                    <li><strong>Frameworks:</strong> Introducción a frameworks como Bootstrap y Foundation para diseño más rápido y eficaz.</li>
-                    <li><strong>APIs:</strong> Cómo trabajar con APIs RESTful y realizar solicitudes HTTP con JavaScript.</li>
-                    <li><strong>JavaScript Avanzado:</strong> Uso de ES6+, promesas, y programación asíncrona.</li>
-                </ul>
+                <div class="tutorial-module">
+                    <div class="ed-container cross-center">
+                        <div class="ed-item movil-100 web-40 feature-image">
+                            <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Desarrollo Web en tablet y laptop">
+                        </div>
+                        <div class="ed-item movil-100 web-60">
+                            <h2>Desarrollo Web</h2>
+                            <p>Tutoriales que abarcan desde los fundamentos básicos hasta temas intermedios y avanzados.</p>
+                        </div>
+                    </div>
+                    <div class="ed-container" style="margin-top: 2rem;">
+                        <div class="ed-item movil-100 web-50">
+                            <h3>Fundamentos Básicos</h3>
+                            <ul>
+                                <li><strong>HTML:</strong> Estructura de una página web.</li>
+                                <li><strong>CSS:</strong> Estilos para formatear y diseñar.</li>
+                                <li><strong>JavaScript:</strong> Introducción y manipulación del DOM.</li>
+                            </ul>
+                        </div>
+                        <div class="ed-item movil-100 web-50">
+                            <h3>Tutoriales Intermedios</h3>
+                            <ul>
+                                <li><strong>Responsive Design:</strong> Adaptación a diferentes dispositivos.</li>
+                                <li><strong>Frameworks:</strong> Introducción a Bootstrap y Foundation.</li>
+                                <li><strong>APIs y ES6+:</strong> Consumo de APIs y JS moderno.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section id="moviles">
-                <h2>Desarrollo Móvil</h2>
-                <p>Explora tutoriales que te guiarán desde la creación de aplicaciones móviles básicas hasta el desarrollo de aplicaciones más complejas para Android e iOS.</p>
-
-                <h3>Fundamentos Básicos</h3>
-                <ul>
-                    <li><strong>Android:</strong> Configuración del entorno de desarrollo y creación de tu primera aplicación en Android Studio.</li>
-                    <li><strong>iOS:</strong> Introducción a Xcode y Swift para desarrollar aplicaciones para iPhone y iPad.</li>
-                    <li><strong>Diseño de Interfaces:</strong> Principios básicos para el diseño de interfaces móviles intuitivas.</li>
-                </ul>
-
-                <h3>Tutoriales Intermedios</h3>
-                <ul>
-                    <li><strong>Flutter:</strong> Desarrollo de aplicaciones multiplataforma con Flutter y Dart.</li>
-                    <li><strong>React Native:</strong> Creación de aplicaciones móviles con React Native y sus componentes.</li>
-                    <li><strong>Servicios Web:</strong> Integración de servicios web y manejo de datos remotos en aplicaciones móviles.</li>
-                    <li><strong>Optimización:</strong> Técnicas para mejorar el rendimiento y la eficiencia de tus aplicaciones móviles.</li>
-                </ul>
+                <div class="tutorial-module">
+                    <div class="ed-container cross-center">
+                        <div class="ed-item movil-100 web-40 feature-image">
+                            <img src="https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Desarrollo de aplicaciones móviles">
+                        </div>
+                        <div class="ed-item movil-100 web-60">
+                            <h2>Desarrollo Móvil</h2>
+                            <p>Guías desde la creación de tu primera app hasta aplicaciones más complejas para Android e iOS.</p>
+                        </div>
+                    </div>
+                    <div class="ed-container" style="margin-top: 2rem;">
+                        <div class="ed-item movil-100 web-50">
+                            <h3>Fundamentos Básicos</h3>
+                            <ul>
+                                <li><strong>Android:</strong> Primera app en Android Studio.</li>
+                                <li><strong>iOS:</strong> Introducción a Xcode y Swift.</li>
+                                <li><strong>Diseño de Interfaces:</strong> Principios de UI/UX móvil.</li>
+                            </ul>
+                        </div>
+                        <div class="ed-item movil-100 web-50">
+                            <h3>Tutoriales Intermedios</h3>
+                            <ul>
+                                <li><strong>Flutter y React Native:</strong> Desarrollo multiplataforma.</li>
+                                <li><strong>Servicios Web:</strong> Integración de datos remotos.</li>
+                                <li><strong>Optimización:</strong> Mejora de rendimiento y eficiencia.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section id="software">
-                <h2>Desarrollo de Software</h2>
-                <p>En esta sección, encontrarás tutoriales para desarrollar software desde cero, abarcando tanto lenguajes de programación básicos como conceptos más avanzados.</p>
+                <div class="tutorial-module">
+                    <div class="ed-container cross-center">
+                        <div class="ed-item movil-100 web-40 feature-image">
+                            <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Programación y desarrollo de software">
+                        </div>
+                        <div class="ed-item movil-100 web-60">
+                            <h2>Desarrollo de Software</h2>
+                            <p>Tutoriales para desarrollar software desde cero, abarcando lenguajes y conceptos avanzados.</p>
+                        </div>
+                    </div>
+                    <div class="ed-container" style="margin-top: 2rem;">
+                        <div class="ed-item movil-100 web-50">
+                            <h3>Fundamentos Básicos</h3>
+                            <ul>
+                                <li><strong>Python y Java:</strong> Sintaxis, estructuras y POO.</li>
+                                <li><strong>Control de Versiones:</strong> Uso de Git para gestionar código.</li>
+                            </ul>
+                        </div>
+                        <div class="ed-item movil-100 web-50">
+                            <h3>Tutoriales Intermedios</h3>
+                            <ul>
+                                <li><strong>Metodologías Ágiles:</strong> Scrum y Kanban.</li>
+                                <li><strong>DevOps:</strong> Prácticas de CI/CD.</li>
+                                <li><strong>Inteligencia Artificial:</strong> Conceptos básicos de IA/ML.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                <h3>Fundamentos Básicos</h3>
-                <ul>
-                    <li><strong>Python:</strong> Introducción a Python, incluyendo sintaxis básica, estructuras de datos, y programación orientada a objetos.</li>
-                    <li><strong>Java:</strong> Conceptos fundamentales en Java, como clases, objetos y colecciones.</li>
-                    <li><strong>Control de Versiones:</strong> Uso de Git para gestionar versiones de tu código y colaborar con otros desarrolladores.</li>
-                </ul>
-
-                <h3>Tutoriales Intermedios</h3>
-                <ul>
-                    <li><strong>Metodologías Ágiles:</strong> Introducción a Scrum y Kanban para gestionar proyectos de software.</li>
-                    <li><strong>DevOps:</strong> Prácticas de integración y entrega continua (CI/CD) para mejorar el ciclo de vida del desarrollo de software.</li>
-                    <li><strong>Programación Concurrente:</strong> Técnicas para manejar múltiples hilos y procesos en programación.</li>
-                    <li><strong>Inteligencia Artificial:</strong> Conceptos básicos de IA y aprendizaje automático utilizando librerías como TensorFlow y scikit-learn.</li>
-                </ul>
+            <section id="reseña">
+                <div class="tutorial-module">
+                    <h2>Reseñas y Análisis</h2>
+                    <p>Ofrecemos una perspectiva crítica y bien investigada para ayudarte a tomar decisiones informadas en tus proyectos y elecciones tecnológicas.</p>
+                    <div class="ed-container" style="margin-top: 2rem;">
+                        <div class="ed-item movil-100 web-50">
+                            <h3>Análisis de Herramientas</h3>
+                            <ul>
+                                <li><strong>Software de Desarrollo:</strong> VS Code, IntelliJ IDEA.</li>
+                                <li><strong>Frameworks y Librerías:</strong> React, Vue.js, Tailwind CSS.</li>
+                                <li><strong>Plataformas en la Nube:</strong> AWS, Azure, Google Cloud.</li>
+                            </ul>
+                        </div>
+                        <div class="ed-item movil-100 web-50">
+                            <h3>Comparativas y Opinión</h3>
+                            <ul>
+                                <li><strong>Frontend vs. Backend:</strong> Diferencias y tecnologías.</li>
+                                <li><strong>Metodologías:</strong> Agile vs. Waterfall.</li>
+                                <li><strong>Tendencias Emergentes:</strong> IA, Blockchain y más.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
-        <section id="reseña">
-            <h2>Reseña</h2>
-
-                <p>En esta sección, presentamos una serie de reseñas y análisis profundos sobre una variedad de temas tecnológicos y de desarrollo. Nuestro objetivo es ofrecer una perspectiva crítica y bien investigada para ayudarte a tomar decisiones informadas en tus proyectos y elecciones tecnológicas.</p>
-                
-                <h3>Reseñas de Productos y Herramientas</h3>
-                <p>Realizamos reseñas exhaustivas de las herramientas y productos más recientes en el mercado. Nuestras reseñas incluyen:</p>
-                <ul>
-                    <li><strong>Software de Desarrollo:</strong> Analizamos IDEs (Entornos de Desarrollo Integrado) como Visual Studio Code, IntelliJ IDEA y Eclipse, evaluando su funcionalidad, extensibilidad, y rendimiento. Comparamos características como soporte para lenguajes de programación, integración con herramientas de control de versiones y personalización.</li>
-                    <li><strong>Frameworks y Librerías:</strong> Revisamos los frameworks y librerías más populares y emergentes, tales como React, Angular, Vue.js, y las herramientas de UI/UX como Bootstrap y Tailwind CSS. Evaluamos su facilidad de uso, comunidad de soporte, documentación y rendimiento.</li>
-                    <li><strong>Plataformas en la Nube:</strong> Ofrecemos análisis de plataformas en la nube como AWS, Azure y Google Cloud Platform. Discutimos sus características, ventajas, y cómo se comparan en términos de servicios ofrecidos, precios, y facilidad de integración.</li>
-                    <li><strong>Herramientas de Productividad:</strong> Revisamos herramientas de productividad y colaboración como Slack, Asana, y Trello. Evaluamos su impacto en la gestión de proyectos, comunicación en equipo, y cómo estas herramientas pueden mejorar la eficiencia y organización.</li>
-                </ul>
-            
-                <h3>Comparativas de Tecnologías</h3>
-                <p>Proporcionamos comparativas detalladas entre diferentes tecnologías y enfoques para ayudarte a elegir la mejor opción para tus necesidades:</p>
-                <ul>
-                    <li><strong>Desarrollo Web vs. Desarrollo Móvil:</strong> Comparamos el desarrollo web con el desarrollo móvil en términos de herramientas, lenguajes de programación, y frameworks. Analizamos los pros y contras de cada enfoque y las consideraciones clave para elegir el más adecuado para tu proyecto.</li>
-                    <li><strong>Frontend vs. Backend:</strong> Explora las diferencias entre el desarrollo frontend y backend. Comparamos tecnologías y herramientas utilizadas en ambos lados del desarrollo, y discutimos las habilidades necesarias y las responsabilidades típicas de cada rol.</li>
-                    <li><strong>Metodologías de Desarrollo:</strong> Comparamos metodologías de desarrollo ágil como Scrum y Kanban, y metodologías tradicionales como Waterfall. Analizamos sus enfoques, ventajas, y cómo afectan la gestión de proyectos y la entrega de software.</li>
-                </ul>
-            
-                <h3>Opiniones de Expertos</h3>
-                <p>Incluimos opiniones y entrevistas con expertos en el campo de la tecnología y el desarrollo de software. Estas opiniones proporcionan perspectivas valiosas sobre:</p>
-                <ul>
-                    <li><strong>Tendencias Emergentes:</strong> Escucha a los expertos discutir sobre las tendencias emergentes en tecnología, como la inteligencia artificial, el blockchain, y la computación cuántica. Comprende cómo estas tendencias podrían impactar el futuro del desarrollo y la tecnología.</li>
-                    <li><strong>Mejores Prácticas:</strong> Obtén consejos y mejores prácticas de desarrolladores y profesionales de la industria sobre cómo abordar desafíos comunes en el desarrollo de software, como la gestión de la deuda técnica, la integración de sistemas y la implementación de pruebas.</li>
-                    <li><strong>Casos de Éxito:</strong> Lee sobre casos de éxito de empresas y proyectos que han implementado soluciones innovadoras. Analizamos cómo estas empresas superaron desafíos y lograron sus objetivos mediante el uso de tecnologías avanzadas y metodologías efectivas.</li>
-                </ul>
-            
-                <h3>Artículos de Opinión</h3>
-                <p>Publicamos artículos de opinión sobre temas actuales y relevantes en el mundo de la tecnología y el desarrollo de software. Estos artículos ofrecen:</p>
-                <ul>
-                    <li><strong>Análisis Crítico:</strong> Examina y cuestiona las prácticas y tecnologías actuales, proporcionando una visión crítica sobre su impacto en la industria y la sociedad.</li>
-                    <li><strong>Tendencias de Futuro:</strong> Explora las posibles direcciones futuras de la tecnología y cómo los desarrollos actuales podrían evolucionar.</li>
-                    <li><strong>Reflexiones Personales:</strong> Comparte experiencias personales y lecciones aprendidas en el campo del desarrollo de software y la tecnología.</li>
-                </ul>
-            </section>
                 
         <aside class="ed-item web-25">
-            
+            <div>
                 <h2>Conéctate con Nosotros</h2>
-            <p>Sigue nuestras últimas actualizaciones y descubre cómo la tecnología puede mejorar tu vida.</p>
-            <ul>
-                <li><a href="https://www.facebook.com/">Síguenos en Facebook</a></li>
-                <li><a href="https://twitter.com/">Síguenos en Twitter</a></li>
-                <li><a href="https://www.linkedin.com/">Conéctate en LinkedIn</a></li>
-            </ul>
+                <p>Sigue nuestras últimas actualizaciones y descubre cómo la tecnología puede mejorar tu vida.</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Síguenos en Facebook</a></li>
+                    <li><a href="https://twitter.com/">Síguenos en Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/">Conéctate en LinkedIn</a></li>
+                </ul>
+            </div>
         </aside>
     </div>
 
 
-    <footer>
-        <div class="ed-container">
-            <div class="ed-item">
-                <p>Proyecto Web</p>
-                <p>Diseñado por la única y original MIYUKI! </p>
+<footer>
+    <div class="ed-container">
+        <div class="footer-container center">
+            <!-- Column 1: Logo and About -->
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <a href="Index.html"><img src="logo.png" alt="Logo de la empresa"></a>
+                </div>
+                <p>Impulsando el futuro a través de innovaciones tecnológicas. Conectamos personas, ideas y soluciones para un mañana más brillante.</p>
             </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-column">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="Nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="Artículos.html">Artículos</a></li>
+                    <li><a href="Tutoriales.html">Tutoriales</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Legal -->
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>
+
+          
         </div>
-    </footer>
+
+        <div class="footer-bottom center">
+            <p>&copy; 2024 Tecnología Avanzada. Diseñado por MIYUKI. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const mainNav = document.getElementById('main-nav');
+    
+        hamburgerButton.addEventListener('click', () => {
+            mainNav.classList.toggle('is-active');
+            hamburgerButton.classList.toggle('is-active');
+        });
+    </script>
 </body>  
 </html>

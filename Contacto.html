@@ -8,74 +8,78 @@
     <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
-    <header class="ed-container container-fluid">
-        <div class="ed-item web-20">
-            <a href="/"><img src="logo.png"></a>
+    <header class="ed-container">
+        <div class="ed-item movil-50 web-20 logo-container">
+            <a href="Index.html"><img src="logo.png" alt="Logo de la empresa"></a>
         </div>
-        <div class="ed-item web-80">
-            <nav>
+        <div class="ed-item movil-50 web-80 nav-container">
+            <button class="hamburger-button" id="hamburger-button" aria-label="Abrir Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="main-nav" class="ed-menu-container">
                 <ul class="ed-menu web-horizontal web-main-end">
-                    <li><a class="ih" href="Index.html">Inicio</a></li>
-                    <li><a class="ih" href="Nosotros.html">Nosotros</a></li>
-                    <li><a class="ih" href="Artículos.html">Artículos</a>
-                        <ul class="ah">
-                            <li><a class="ih" href="#web">Web</a></li>
-                            <li><a class="ih" href="#moviles">Moviles</a></li>
-                            <li><a class="ih" href="#software">Software</a></li>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Artículos.html">Artículos</a>
+                        <ul>
+                            <li><a href="Artículos.html#web">Web</a></li>
+                            <li><a href="Artículos.html#moviles">Moviles</a></li>
+                            <li><a href="Artículos.html#software">Software</a></li>
                         </ul>
                     </li>
-                    
-                    <li><a class="ih" href="Tutoriales.html">Tutoriales</a></li>
-                    <li><a class="ih"  href="Contacto.html">Contacto </a></li>
+                    <li><a href="Tutoriales.html">Tutoriales</a></li>
+                    <li><a href="Contacto.html">Contacto </a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div id="banner" class="ed-container">
-        <div class="ed-item">
-            <img src="banner1.jpg" alt="Inicio">
+    <section id="contacto-banner" class="page-banner ed-container full">
+        <div class="page-banner-content ed-item">
+            <h1>Contacto</h1>
         </div>
-    </div>
+    </section>
 
     <div class="ed-container">
         <main class="ed-item web-75">
-            <h1>Contacto</h1>
-            <p>Para cualquier consulta o sugerencia, por favor completa el siguiente formulario y nos pondremos en contacto contigo a la brevedad. Tu opinión es muy importante para nosotros.</p>
-
-            <div class="contact-form">
-                <h2>Formulario de Contacto</h2>
-                <form action="procesar_contacto.php" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
-
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
-
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
-
-                    <br><br>
-                    <button type="submit">Enviar Mensaje</button>
-                </form>
-            </div>
-
-            <div class="contact-info">
-                <h2>Información de Contacto</h2>
-                <h3>Dirección:</h3>
-                <p>Calle Ficticia 123, Ciudad Imaginaria, País Inventado</p>
-                
-                <h3>Teléfono:</h3>
-                <p>(123) 456-7890</p>
-                
-                <h3>Correo Electrónico:</h3>
-                <p>info@proyectoweb.com</p>
-
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.567830138267!2d-122.40750568468173!3d37.78373157975885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807b84c2e39f%3A0x5105b92c6f93e6a4!2sCalle%20Ficticia%20123%2C%20Ciudad%20Imaginaria%2C%20Pa%C3%ADs%20Inventado!5e0!3m2!1ses!2ses!4v1605288978178!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="ed-container">
+                <div class="ed-item movil-100 web-50">
+                    <div class="contact-form">
+                        <h2>Formulario de Contacto</h2>
+                        <p>Para cualquier consulta o sugerencia, por favor completa el formulario.</p>
+                        <form action="procesar_contacto.php" method="post">
+                            <label for="nombre" class="s-hidden">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+        
+                            <label for="email" class="s-hidden">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+        
+                            <label for="asunto" class="s-hidden">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
+        
+                            <label for="mensaje" class="s-hidden">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí" required></textarea>
+        
+                            <button type="submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="ed-item movil-100 web-50">
+                    <div class="contact-info">
+                        <h2>Información Directa</h2>
+                        <p>También puedes encontrarnos aquí:</p>
+                        <h3>Dirección:</h3>
+                        <p>Calle Ficticia 123, Ciudad Imaginaria</p>
+                        <h3>Teléfono:</h3>
+                        <p>(123) 456-7890</p>
+                        <h3>Correo Electrónico:</h3>
+                        <p>info@proyectoweb.com</p>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.567830138267!2d-122.40750568468173!3d37.78373157975885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807b84c2e39f%3A0x5105b92c6f93e6a4!2sCalle%20Ficticia%20123%2C%20Ciudad%20Imaginaria%2C%20Pa%C3%ADs%20Inventado!5e0!3m2!1ses!2ses!4v1605288978178!5m2!1ses!2ses" class="total" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -93,13 +97,55 @@
         </aside>
     </div>
 
-    <footer>
-        <div class="ed-container">
-            <div class="ed-item">
-                <p>Proyecto Web</p>
-                <p>Diseñado por la única y original MIYUKI!</p>
+<footer>
+    <div class="ed-container">
+        <div class="footer-container center">
+            <!-- Column 1: Logo and About -->
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <a href="Index.html"><img src="logo.png" alt="Logo de la empresa"></a>
+                </div>
+                <p>Impulsando el futuro a través de innovaciones tecnológicas. Conectamos personas, ideas y soluciones para un mañana más brillante.</p>
             </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-column">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="Nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="Artículos.html">Artículos</a></li>
+                    <li><a href="Tutoriales.html">Tutoriales</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Legal -->
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>
+
+           
         </div>
-    </footer>
+
+        <div class="footer-bottom center">
+            <p>&copy; 2024 Tecnología Avanzada. Diseñado por MIYUKI. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const mainNav = document.getElementById('main-nav');
+    
+        hamburgerButton.addEventListener('click', () => {
+            mainNav.classList.toggle('is-active');
+            hamburgerButton.classList.toggle('is-active');
+        });
+    </script>
 </body>  
 </html>
